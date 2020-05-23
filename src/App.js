@@ -3,7 +3,7 @@ import * as BooksAPI from "./BooksAPI";
 import MainPage from "./MainPage";
 import SearchPage from "./SearchPage";
 import "./App.css";
-import * as booksAPI from './BooksAPI';
+import * as booksAPI from "./BooksAPI";
 
 class BooksApp extends React.Component {
   state = {
@@ -17,14 +17,18 @@ class BooksApp extends React.Component {
     console.log(this.state.books);
   }
 
+  moveShelf = (book, shelf) => {
+    BooksAPI.update(book, shelf);
+    BooksAPI.getAll().then((books) => {
+      this.setState({ books: books });
+    })
+  }
+
   render() {
     console.log(this.state.books);
     return (
       <div className="app">
-        <MainPage 
-          books ={this.state.books}
-        
-        />
+        <MainPage books={this.state.books} moveShelf={this.moveShelf} />
       </div>
     );
   }
