@@ -1,5 +1,6 @@
 import React from "react";
 import SearchPage from "./SearchPage";
+import * as MainPage from "./MainPage";
 
 class Book extends React.Component {
   render() {
@@ -11,15 +12,16 @@ class Book extends React.Component {
             style={{
               width: 128,
               height: 192,
-              backgroundImage:
-                `url("${this.props.book.imageLinks.thumbnail}")`            }}
+              backgroundImage: `url(${this.props.book.imageLinks &&
+                this.props.book.imageLinks.thumbnail})`
+            }}
           />
           <div className="book-shelf-changer">
             <select
-            onChange={(event)=>this.props.moveShelf(
-              this.props.book, event.target.value
-            )}
-      
+              onChange={(event) =>
+                this.props.moveShelf(this.props.book, event.target.value)
+              }
+              value={this.props.currentShelf}
             >
               <option value="move" disabled>
                 Move to...
@@ -31,8 +33,8 @@ class Book extends React.Component {
             </select>
           </div>
         </div>
-            <div className="book-title">{this.props.book.title}</div>
-            <div className="book-authors">{this.props.book.authors}</div>
+        <div className="book-title">{this.props.book.title}</div>
+        <div className="book-authors">{this.props.book.authors}</div>
       </div>
     );
   }
