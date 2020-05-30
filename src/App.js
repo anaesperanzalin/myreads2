@@ -30,6 +30,7 @@ class BooksApp extends React.Component {
       <div className="app">
         <MainPage books={this.state.books} 
         moveShelf={this.moveShelf} />
+
       <SearchPage
       book = {this.props.books}
     

@@ -1,5 +1,5 @@
 import React from "react";
-import SearchPage from "./SearchPage";
+import * as SearchPage from "./SearchPage";
 import * as MainPage from "./MainPage";
 
 class Book extends React.Component {
@@ -12,8 +12,7 @@ class Book extends React.Component {
             style={{
               width: 128,
               height: 192,
-              backgroundImage: `url(${this.props.book.imageLinks &&
-                this.props.book.imageLinks.thumbnail})`
+              backgroundImage: `url("${ this.props.book.imageLinks && this.props.book.imageLinks.thumbnail }")`
             }}
           />
           <div className="book-shelf-changer">

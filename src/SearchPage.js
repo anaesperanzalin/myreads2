@@ -28,6 +28,8 @@ class SearchPage extends React.Component {
   };
 
   render() {
+
+
     return (
       <div className="search-books">
         <div className="search-books-bar">
@@ -58,7 +60,7 @@ class SearchPage extends React.Component {
           <ol className="books-grid">
             {this.state.searchedBooks.map((searchedBook) => (
               <li key={searchedBook.id}>
-                <Book> book = {searchedBook}</Book>
+                <Book book ={searchedBook}/>
               </li>
             ))}
           </ol>
