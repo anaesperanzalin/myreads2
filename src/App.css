@@ -7,21 +7,22 @@ body {
 }
 
 body, .app {
-  background: white;
+  background: lightcyan;
 }
 
 /* main page */
 
 .list-books-title {
   padding: 10px 0;
-  background: darkcyan;
+  background:white;
+  color: black;
   text-align: center;
 }
 
 .list-books-title h1 {
   font-weight: 400;
   margin: 0;
-  color: white;
+  color:black;
 }
 
 .list-books-content {
@@ -41,6 +42,7 @@ body, .app {
 
 .bookshelf-title {
   border-bottom: 1px solid #dedede;
+  color: black;
 }
 
 .bookshelf-books {
@@ -52,7 +54,9 @@ body, .app {
   right: 50px;
   bottom: 50px;
   background-color: yellow;
-  color:black
+  height: 50px;
+  color: whitesmoke;
+  box-shadow: black;
 }
 
 .open-search button {
@@ -70,8 +74,9 @@ body, .app {
   outline: 0;
 }
 
-.open-search button:hover {
-  background-color: darkcyan;
+.open-search:hover {
+  background-color: lightgreen;
+  
 }
 
 
@@ -116,8 +121,8 @@ body, .app {
 }
 
 button:active {
-  border: red;
-  outline: none;
+  border:blue;
+  outline: white;
 }
 
 .search-books-results {
@@ -151,10 +156,11 @@ button:active {
 
 .book-title {
   margin-top: 10px;
+  color:black;
 }
 
 .book-authors {
-  color: #999;
+  color:grey;
 }
 
 .book-top {
@@ -190,7 +196,7 @@ button:active {
 
 .book-cover {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  background: #eee;
+  background: white;
 }
 
 .book-cover-title {

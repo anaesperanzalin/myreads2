@@ -74,7 +74,7 @@ class MainPage extends React.Component {
         </div>
         <div className="open-search">
           <Link to="/search">
-            Click here to add a book!
+            +  Click here to add a book!
           </Link>
         </div>
       </div>
