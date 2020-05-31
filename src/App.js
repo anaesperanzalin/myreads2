@@ -4,6 +4,7 @@ import MainPage from "./MainPage";
 import SearchPage from "./SearchPage";
 import "./App.css";
 import * as booksAPI from "./BooksAPI";
+import { Route } from "react-router-dom";
 
 class BooksApp extends React.Component {
   state = {
@@ -21,22 +22,25 @@ class BooksApp extends React.Component {
     BooksAPI.update(book, shelf);
     BooksAPI.getAll().then((books) => {
       this.setState({ books: books });
-    })
-  }
+    });
+  };
 
   render() {
     console.log(this.state.books);
     return (
       <div className="app">
-        <MainPage books={this.state.books} 
-        moveShelf={this.moveShelf} />
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <MainPage books={this.state.books} moveShelf={this.moveShelf} />
+          )}
+        />
 
-      <SearchPage
-      book = {this.props.books}
-    
-      />
-
-
+        <Route
+          path="/search"
+          render={() => <SearchPage moveShelf={this.moveShelf} />}
+        />
       </div>
     );
   }

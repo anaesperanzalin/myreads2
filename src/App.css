@@ -49,8 +49,10 @@ body, .app {
 
 .open-search {
   position: fixed;
-  right: 25px;
-  bottom: 25px;
+  right: 50px;
+  bottom: 50px;
+  background-color: yellow;
+  color:black
 }
 
 .open-search button {

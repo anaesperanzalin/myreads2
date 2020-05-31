@@ -1,6 +1,8 @@
 import React from "react";
 import Book from "./Book";
 import * as BooksAPI from "./BooksAPI";
+import {Link} from "react-router-dom";
+
 
 class SearchPage extends React.Component {
   state = {
@@ -18,27 +20,28 @@ class SearchPage extends React.Component {
   updateSearchedBooks = (query) => {
     if (query) {
       BooksAPI.search(query).then((searchedBooks) => {
-        if (searchedBooks.error) {
-          this.setState({ searchedBooks: [] });
-        } else {
-          this.setState({ searchedBooks: searchedBooks });
-        }
-      });
+        if (searchedBooks.error) 
+          {this.setState({ searchedBooks: []})} 
+        else {
+          this.setState({searchedBooks: searchedBooks});
+          }
+        })
+    } else {
+      this.setState({searchedBooks:[]})
     }
-  };
+      }
+  
 
   render() {
 
 
     return (
       <div className="search-books">
-        <div className="search-books-bar">
-          <button
-            className="close-search"
-            onClick={() => this.setState({ showSearchPage: false })}
-          >
-            Close
-          </button>
+        <div className="search-books-bar">  
+          <Link 
+          to="/"
+          className="close-search"> Close</Link>
+    
           <div className="search-books-input-wrapper">
             {/*
                   NOTES: The search from BooksAPI is limited to a particular set of search terms.
@@ -60,14 +63,17 @@ class SearchPage extends React.Component {
           <ol className="books-grid">
             {this.state.searchedBooks.map((searchedBook) => (
               <li key={searchedBook.id}>
-                <Book book ={searchedBook}/>
+                <Book 
+                book ={searchedBook}
+                moveShelf={this.props.moveShelf}
+                />
               </li>
             ))}
           </ol>
         </div>
       </div>
-    );
-  }
+  ) 
+}
 }
 
 export default SearchPage;
