@@ -28,7 +28,7 @@ $ npm start
 The project can be viewed in your browser at http://localhost:3000 
 
 
-Thank you for reading this. Enjoy myReads! :) 
+Thank you for reading this. Enjoy MyReads! :) 
 
 
 
