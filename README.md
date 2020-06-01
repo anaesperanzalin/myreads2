@@ -1,16 +1,18 @@
 # MyReads Project
 
-Myreads is an app that helps you to find books and categorize them in three categories: 
+Myreads is an app that helps you to search books and categorize them into three categories: 
 - Currently reading
 - Want to read 
 - Read 
+
+You can search books by title or author. 
 
 You can see the demo here:
 https://myreadsbyanalin.netlify.app/search/
 
 It's the first of three projects required by the Udacity's React Nanodegree program. 
 
-## TL;DR
+# Install and view the project
 You can clone the repository, use NPM to install the dependencies and start the development server. 
 
 $ git clone https://github.com/anaesperanzalin/myreads2
