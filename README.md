@@ -1,6 +1,6 @@
 # MyReads Project
 
-Myreads is an app that helps you to search books and categorize them into three book shelves: 
+Myreads is an app that helps you to search books and categorize them into three bookshelves: 
 - Currently reading
 - Want to read 
 - Read 
