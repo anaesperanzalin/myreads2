@@ -39,7 +39,7 @@ class SearchPage extends React.Component {
       <div className="search-books">
         <div className="search-books-bar">  
           <Link 
-          to="/"
+          to="/myreads2/"
           className="close-search"> Close</Link>
     
           <div className="search-books-input-wrapper">

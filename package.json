@@ -2,7 +2,7 @@
   "name": "myreads-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anaesperanzalin.github.io/myreads2",
+  "homepage": "https://anaesperanzalin.github.io/myreads2/",
   "dependencies": {
     "@babel/runtime": "7.10.2",
     "email-addresses": "3.1.0",
