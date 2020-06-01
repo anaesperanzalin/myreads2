@@ -5,9 +5,9 @@ Myreads is an app that helps you to search books and categorize them into three 
 - Want to read 
 - Read 
 
-You can search books by title or author. 
+You can search books by their title or author. 
 
-You can see the demo here:
+See the live demo here:
 https://myreadsbyanalin.netlify.app/
 
 This is the first of three projects required by the Udacity's React Nanodegree program. 
@@ -25,8 +25,11 @@ $ npm start
 
 
 
-You can view the project in your browser at http://localhost:3000 
+The project can be viewed in your browser at http://localhost:3000 
 
-Thank you for taking time to view my project! 
+
+Thank you for reading this. Enjoy the app! :) 
+
+
 
 Ana 
