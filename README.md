@@ -13,7 +13,7 @@ https://myreadsbyanalin.netlify.app/
 This is the first of three projects required by the Udacity's React Nanodegree program. 
 
 # Install and view the project
-After cloning the repository,use NPM to install the dependencies and start the development server. 
+After cloning the repository, use NPM to install the dependencies and start the development server. 
 
 $ git clone https://github.com/anaesperanzalin/myreads2
 
